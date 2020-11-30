@@ -1,11 +1,16 @@
+//añade build tasks especificos para android
 plugins {
     id 'com.android.application'
 }
 
+//configura build options especificos para android
 android {
+    //indica la version sdk del build
     compileSdkVersion 30
+    //indica la version de las herramientas del build
     buildToolsVersion "30.0.2"
 
+    //configuracion del nucleo. sobreescribe las del manifest
     defaultConfig {
         applicationId "com.androidclase.cameraapp"
         minSdkVersion 27
@@ -15,7 +20,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    //Controla como la app es build y empaquetada
     buildTypes {
         release {
             minifyEnabled false
@@ -27,7 +32,7 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
+//en las dependencias es donde añadiremos las librerias que usemos
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
