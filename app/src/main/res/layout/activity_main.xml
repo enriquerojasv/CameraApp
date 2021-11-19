@@ -7,22 +7,27 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
     <Button
         android:id="@+id/btnCamera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="Foto" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="Save on SD" />
-
-    <ImageView
-        android:id="@+id/photoView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
 
 </LinearLayout>

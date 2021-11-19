@@ -6,6 +6,7 @@
     package="com.androidclase.cameraapp">
     <!-- nombre del paquete, no cambiar una vez publicado -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- etiqueta de aplicacion, es obligatoria -->
     <!-- el backup permite que se puedan hacer backup -->
